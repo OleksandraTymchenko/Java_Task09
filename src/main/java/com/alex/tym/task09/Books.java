@@ -17,8 +17,8 @@ public class Books {
         Arrays.sort(books, new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                String name1 = ((Book)o1).getAuthor();
-                String name2 = ((Book)o2).getAuthor();
+                String name1 = ((Book) o1).getAuthor();
+                String name2 = ((Book) o2).getAuthor();
                 return name1.compareTo(name2);
             }
         });
@@ -27,26 +27,27 @@ public class Books {
     public void comparePuplisherNames(Book[] books) {
 
         Arrays.sort(books, new Comparator() {
-                    @Override
-                    public int compare(Object o1, Object o2) {
-                        String name1 = ((Book) o1).getPublisher();
-                        String name2 = ((Book) o2).getPublisher();
-                        return name1.compareTo(name2); }
-                });
+            @Override
+            public int compare(Object o1, Object o2) {
+                String name1 = ((Book) o1).getPublisher();
+                String name2 = ((Book) o2).getPublisher();
+                return name1.compareTo(name2);
+            }
+        });
     }
 
     public void comparePrices(Book[] books) {
 
         Arrays.sort(books, new Comparator() {
-        @Override
-        public int compare(Object o1, Object o2) {
+            @Override
+            public int compare(Object o1, Object o2) {
 
-            Book price1 = (Book) o1;
-            Book price2 = (Book) o2;
-            if (price1.getPrice() > price2.getPrice()) return -1;
-            if (price1.getPrice() < price2.getPrice()) return 1;
-            return 0;
-        }
+                Book price1 = (Book) o1;
+                Book price2 = (Book) o2;
+                if (price1.getPrice() > price2.getPrice()) return -1;
+                if (price1.getPrice() < price2.getPrice()) return 1;
+                return 0;
+            }
         });
     }
 
