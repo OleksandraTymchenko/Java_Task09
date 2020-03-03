@@ -6,13 +6,18 @@ import static com.alex.tym.task09.Books.*;
 
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int i = 5;
-        Book book1 = new Book(1, "The Old Man and the Sea", "Ernest Hemingway", "B & W Publishing", 1987, 324, 78);
-        Book book2 = new Book(2, "A Walk in Amnesia", "O. Henry", "Ballantine Books", 2001, 90, 45);
-        Book book3 = new Book(3, "Robin Hood", "Sally M. Stockton", "Ace Books", 1999, 342, 20);
-        Book book4 = new Book(4, "A Kiss Before Dying", "Ira Levin", "Airiti Press", 2009, 420, 110);
-        Book book5 = new Book(5, "Pride And Prejudice", "Jane Austen", "Armida Publications", 2004, 145, 90);
+        Book book1 = new Book(1, "The Old Man and the Sea",
+                "Ernest Hemingway", "B & W Publishing", 1987, 324, 78);
+        Book book2 = new Book(2, "A Walk in Amnesia",
+                "O. Henry", "Ballantine Books", 2001, 90, 45);
+        Book book3 = new Book(3, "Robin Hood",
+                "Sally M. Stockton", "Ace Books", 1999, 342, 20);
+        Book book4 = new Book(4, "A Kiss Before Dying",
+                "Ira Levin", "Airiti Press", 2009, 420, 110);
+        Book book5 = new Book(5, "Pride And Prejudice",
+                "Jane Austen", "Armida Publications", 2004, 145, 90);
 
         Books books = new Books(i);
         books.addBook(book1);
